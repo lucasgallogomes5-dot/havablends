@@ -1,4 +1,3 @@
-
 // ENVIO DE FORMULÁRIO POR EMAIL
 emailjs.init({
   publicKey: "MEaqW9yBgFJ5N4UD3",
@@ -15,11 +14,26 @@ document.getElementById("form-anamnese").addEventListener("submit", function (ev
   const data = new FormData(event.target);
   const formData = Object.fromEntries(data.entries());
 
+  // 1. GERAR DATA, HORA E PROTOCOLO INVENCÍVEL
+  const agora = new Date();
+  formData.data_envio = agora.toLocaleDateString('pt-BR'); // Ex: 15/05/2026
+  formData.hora_envio = agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); // Ex: 15:30
+
+  // Formata o protocolo como AAAAMMDD-HHMM (Ex: 20260515-1530)
+  const dataSimples = agora.toISOString().slice(0, 10).replace(/-/g, '');
+  const horaSimples = agora.getHours().toString().padStart(2, '0') + agora.getMinutes().toString().padStart(2, '0');
+  formData.protocolo = `${dataSimples}-${horaSimples}`;
+
   // CORREÇÃO CRÍTICA: Transforma os arrays (checkboxes) em texto separado por vírgula
   // Sem o .join(", "), o EmailJS não consegue ler os dados múltiplos
   formData.Historico = data.getAll("Historico[]").join(", ");
   formData.Objetivo = data.getAll("Objetivo[]").join(", ");
   formData.Aromas = data.getAll("Aromas[]").join(", ");
+
+  // Nota: Se você já adicionou os novos campos de Pele e Cabelo no HTML, 
+  // descomente as duas linhas abaixo para que eles também funcionem:
+  // formData.Tipo_de_Pele = data.getAll("Tipo_de_Pele[]").join(", ");
+  // formData.Cabelo = data.getAll("Cabelo[]").join(", ");
 
   const serviceID = "service_1vqvh9g";
   const templateID = "template_en45sgh";

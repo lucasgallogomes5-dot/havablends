@@ -169,19 +169,26 @@ h1, h2, h3, h4 {
     list-style: none;
     display: flex;
     gap: 30px;
+    transition: transform 0.5s ease; 
 }
 
 .nav-links a {
     text-decoration: none;
     color: #5E5240; 
-    font-size: 0.85rem; 
+    font-size: 0.75rem; 
     text-transform: uppercase;
-    letter-spacing: 1px; 
+    letter-spacing: 0.5px; 
     transition: color 0.3s;
+    
 }
 
 .nav-links a:hover {
     color: #c4a974; 
+       
+}
+
+.nav-links:hover{ 
+    transform: translateY(-5px);  
 }
 
 /* Estilo Base do Hambúrguer (Oculto no Desktop) */
@@ -516,6 +523,113 @@ h1, h2, h3, h4 {
     .minimal-check-bar { flex-direction: column; gap: 8px; }
     .dot-separator { display: none; }
 }
+
+
+
+/* --- ESTILIZAÇÃO CURIOSIDADES --- */
+.curiosities-section {
+    background-color: #F8F3E9;
+}
+
+.curiosity-text p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    color: #5E5240;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* --- ATUALIZAÇÃO SEÇÃO CERTIFICAÇÕES --- */
+.certifications-section {
+    background-color: #FFFBF8; /* Tom creme claríssimo e quente */
+}
+
+.specialization-block {
+    margin-bottom: 60px;
+}
+
+.section-intro-text {
+    max-width: 800px;
+    margin: -15px auto 40px; /* Alinhado com o subtítulo */
+    color: #5E5240;
+    font-size: 1.1rem;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Layout dos Certificados */
+.certificate-display {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Importante pro mobile */
+}
+
+/* O cartão que emoldura a imagem */
+.cert-card-fameesp {
+    background: #fff;
+    border: 1px solid rgba(216, 207, 194, 0.4);
+    border-radius: 8px; /* Arredondado sutil para foto */
+    padding: 15px; /* Sombra interna branca */
+    flex: 1 1 35%; /* Ocupa metade da área, mas encolhe */
+    max-width: 520px; /* Limite de tamanho */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03); /* Sombra muito sutil no estado base */
+}
+
+.cert-card-fameesp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(74, 66, 56, 0.08); /* Sombra existente */
+    border-color: #C99D4E; /* Borda dourada no hover */
+}
+
+.cert-card-fameesp.back {
+    position: relative;
+    overflow: hidden; /* Mantém o blob contido */
+}
+
+.cert-fameesp-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Garante que mostra a foto toda sem cortar */
+    display: block;
+    border-radius: 4px; /* Sutil */
+}
+
+/* Blob menor específico para os certificados */
+.blob-smaller {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(201, 157, 78, 0.04); /* Dourado quase invisível */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    z-index: -1;
+    animation: morphing 12s ease-in-out infinite; /* Mesma animação */
+}
+
+/* Detalhes FAMEESP (Menor) */
+.fameesp-details {
+    margin-top: 15px;
+    border-top: 1px solid rgba(216, 207, 194, 0.2);
+    padding-top: 15px;
+    font-size: 0.75rem;
+    color: #8c8377;
+}
+
+.text-tiny {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+/* Utilitário de margem extra */
+.mt-60 {
+    margin-top: 60px;
+}
+
 /* ==========================================================================
    PRODUTOS
    ========================================================================== */
@@ -1007,7 +1121,7 @@ body.no-scroll {
         background-color: #faf9f6; /* Cor de fundo da marca */
         transition: 0.4s ease;
         z-index: 1000;
-        gap: 20px; /* Espaço uniforme entre os botões */
+        gap: 15px; /* Espaço uniforme entre os botões */
     }
 
     /* Quando o menu está ativo */
@@ -1119,6 +1233,23 @@ body.no-scroll {
     .differentials-list li {
         font-size: 1.1rem;
         list-style: none;
+    }
+
+  .certificate-display {
+        flex-direction: column; /* Um embaixo do outro */
+        gap: 25px;
+        align-items: center;
+    }
+
+    .cert-card-fameesp {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%; /* Ocupa a largura toda */
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr; /* Selos também um embaixo do outro */
+        max-width: 100%;
     }
 
     /* --- PRODUTOS (Cards) --- */
