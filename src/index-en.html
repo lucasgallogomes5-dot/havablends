@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Blends - Essential Oils</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/img/LOGO-ICON-HAVA.ico" type="image/x-icon">
+
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <img src="./assets/img/LOGO-HAVA-BLENDS.png" alt="Hava Blends Logo" class="logo">
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre">ABOUT</a></li>
+                    <li><a href="#processo">PROCESS</a></li>
+                    <li><a href="#produtos">PRODUCTS</a></li>
+                    <li><a href="#contato">CONTACT</a></li>
+                    <li><a href="#anamnese">SENSORY PROFILE</a></li>
+                    <li class="lang-item">
+                        <div class="lang-switcher">
+                            <a href="index.html" class="lang-btn">PT</a>
+                            <span class="divisor">|</span>
+                            <a href="index-en.html" class="lang-btn active">EN</a>
+                            <span class="divisor">|</span>
+                            <a href="index-es.html" class="lang-btn">ES</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="fullscreen-section hero-section">
+        <div class="hero-overlay">
+            <div class="container hero-content text-center">
+                <h1>The Essence of Nature</h1>
+                <p>Handcrafted personalized blends, carefully formulated from the combination of essential oils and
+                    high-quality carrier oils.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-outline">DISCOVER OUR BLENDS</a>
+                    <a href="#anamnese" class="btn btn-outline">TAKE YOUR ASSESSMENT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="fullscreen-section about-section">
+        <div class="container row items-center">
+            <div class="text-content half-width">
+                <span class="subtitle">Harmony | Atmosphere | Wind | Air</span>
+                <h2>Nature in every <br><span class="highlight-gold">drop</span></h2>
+
+                <div class="about-block">
+                    <h3>Brand Essence</h3>
+                    <p><strong>HAVA Blends</strong> was born with the purpose of creating personalized synergies that
+                        respect each person's individuality.</p>
+                    <p>We believe that well-being is unique and dynamic. Therefore, each creation is designed to
+                        accompany
+                        your moment, your needs, and your intention.</p>
+                    <p>Our blends are formulated from high-quality essential and vegetable oils,
+                        selected from different distributors across various regions of the world, always prioritizing
+                        purity,
+                        origin, and the integrity of the raw materials.</p>
+                    <p>Each blend is developed individually, based on
+                        the information provided by each client, in a process that combines technique, listening, and
+                        sensitivity.
+                    </p>
+                    <p>Our work is guided by care, responsibility, and conscious use, creating
+                        sensory combinations that connect naturally to the body and daily well-being.
+                    </p>
+                </div>
+
+            </div>
+            <div class="image-content half-width text-center">
+                <img src="./assets/img/gold-ram.png" alt="Decorative gold leaf" class="about-leaf-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="fullscreen-section about-section">
+        <div class="container row items-center reverse-mobile">
+            <div class="image-content half-width text-center">
+                <img src="./assets/img/element2c.png" alt="Decorative green leaf" class="about-leaf-img2">
+            </div>
+            <div class="text-content half-width">
+                <div class="about-block">
+                    <h3>Purpose</h3>
+                    <p>Promoting well-being, self-care, and emotional balance through natural,
+                        personalized, and conscious blends.</p>
+                </div>
+                <h3>Mission</h3>
+                <p>We create blends that awaken sensations, balance the body, and embrace the soul, respecting
+                    each person's individuality.</p>
+                <h3>Vision</h3>
+                <p>To be a reference in personalized blends that connect nature, aromatic science, and emotion, with
+                    sensitivity, ethics, and purpose.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- (continua exatamente igual, só traduzido...) -->
+
+    <section id="processo" class="experience-section section-padding">
+        <div class="container">
+            <div class="quote-block">
+                <p>"More than products, we create personalized sensory experiences"</p>
+            </div>
+
+            <div class="experience-content-wrapper">
+                <div class="experience-image-side">
+                    <div class="image-wrapper">
+                        <div class="shape-blob"></div>
+                        <img src="./assets/img/process-blend.jpg" alt="HAVA Aromatherapy" class="img-organic">
+                    </div>
+                </div>
+
+                <div class="experience-text-side">
+                    <div class="experience-item">
+                        <span class="item-number">01</span>
+                        <div class="item-info">
+                            <h3>Smart Combinations</h3>
+                            <p>Carefully developed blends to enhance results and sensations.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="item-number">02</span>
+                        <div class="item-info">
+                            <h3>Individual Personalization</h3>
+                            <p>Each blend is created according to your moment, body, and needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="item-number">03</span>
+                        <div class="item-info">
+                            <h3>Accessible Care</h3>
+                            <p>Premium quality with balance between value and benefit.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="item-number">04</span>
+                        <div class="item-info">
+                            <h3>Versatility</h3>
+                            <p>A single blend can be used in multiple ways in your daily life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="fullscreen-section products-section">
+        <div class="container flex-col-center">
+            <div class="text-center">
+                <h2 class="section-title">Our Blends</h2>
+            </div>
+            <div class="single-product-showcase">
+                <img src="./assets/img/mockup-hava-frascos.jpg" alt="Blend Collection" class="main-blend-img">
+            </div>
+            <div class="cards-grid w-100">
+                <div class="blend-card">
+                    <h4>Serenity</h4>
+                    <span class="card-subtitle">RELAXATION AND SLEEP</span>
+                    <p>Lavender • Chamomile • Ylang Ylang</p>
+                </div>
+                <div class="blend-card">
+                    <h4>Vitality</h4>
+                    <span class="card-subtitle">ENERGY AND FOCUS</span>
+                    <p>Sicilian Lemon • Rosemary</p>
+                </div>
+                <div class="blend-card">
+                    <h4>Balance</h4>
+                    <span class="card-subtitle">ANXIETY REDUCTION</span>
+                    <p>Clary Sage • Vetiver</p>
+                </div>
+                <div class="blend-card">
+                    <h4>Awakening</h4>
+                    <span class="card-subtitle">CLARITY AND JOY</span>
+                    <p>Peppermint • Bergamot</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="fullscreen-section contact-section split-section">
+        <div class="contact-image-side">
+            <img src="./assets/img/IMG-20260409-WA0045.jpg" alt="Woman with essential oil">
+        </div>
+        <div class="contact-text-side">
+            <div class="contact-inner-content">
+                <h2 class="section-title">PLACE YOUR ORDER</h2>
+                <h4 class="social-title">Social Media</h4>
+                <div class="social-buttons">
+                    <a href="#" class="social-button instagram"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" />
+                        </svg></a>
+                    <a href="#" class="social-button facebook"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M13 22v-9h3l1-4h-4V7c0-1.2.3-2 2-2h2V1.1C16.7 1 15.4 1 14 1c-3 0-5 1.8-5 5v3H6v4h3v9h4z" />
+                        </svg></a>
+                    <a href="https://wa.me/18645674366" class="social-button whatsapp" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2a10 10 0 00-8.7 15l-1.3 5 5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.2-5.7c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1s-.6.7-.7.8c-.1.1-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.3 7.3 0 01-1.3-1.6c-.1-.2 0-.3.1-.4l.4-.5c.1-.1.1-.2.2-.3 0-.1 0-.3 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a2.6 2.6 0 00-.8 2c0 1.2.9 2.4 1 2.6a11 11 0 004.2 4.1c.6.3 1 .5 1.3.6.6.2 1.2.2 1.6.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:Contact@havablends.com" class="social-button contact">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                            <path
+                                d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M18.4,7L12,11L5.6,7H18.4z M20,18H4V9l8,5l8-5V18z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="anamnese" class="anamnese-section section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Personalization</span>
+                <h2 class="section-title">Hava Blends Sensory Profile</h2>
+                <p class="anamnese-intro">Fill out our evaluation form so we can create the perfect blend for you.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="form-anamnese">
+
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        <div class="form-grid">
+                            <div class="form-group"><label>Full name:</label><input type="text" name="Nome" required>
+                            </div>
+                            <div class="form-group"><label>Date of birth:</label><input type="date" name="Nascimento">
+                            </div>
+                            <div class="form-group"><label>Phone/WhatsApp:</label><input type="tel" name="Telefone"
+                                    required></div>
+                            <div class="form-group"><label>E-mail:</label><input type="email" name="Email"></div>
+                            <div class="form-group"><label>City / State:</label><input type="text" name="Cidade_Estado">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Physical Data</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Skin color:</label>
+                                <select name="Cor_da_Pele">
+                                    <option value="">Select...</option>
+                                    <option value="Clara">Light</option>
+                                    <option value="Média">Medium</option>
+                                    <option value="Morena">Tan</option>
+                                    <option value="Negra">Dark</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Skin type:</label>
+                                <select name="Tipo_de_Pele">
+                                    <option value="">Select...</option>
+                                    <option value="Oleosa">Oily</option>
+                                    <option value="Seca">Dry</option>
+                                    <option value="Mista">Combination</option>
+                                    <option value="Sensível">Sensitive</option>
+                                    <option value="Acneica">Acne-prone</option>
+                                    <option value="Madura">Mature</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Hair type (if applicable):</label>
+                                <div class="checkbox-group row-flex">
+                                    <label><input type="radio" name="Cabelo" value="Seco"> Dry</label>
+                                    <label><input type="radio" name="Cabelo" value="Oleoso"> Oily</label>
+                                    <label><input type="radio" name="Cabelo" value="Normal"> Normal</label>
+                                    <label><input type="radio" name="Cabelo" value="Quimicamente tratado"> Chemically
+                                        treated</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-group full-width">
+                            <label>Health History:</label>
+                            <div class="checkbox-group vertical-stack">
+                                <label><input type="checkbox" name="Historico[]" value="Ansiedade"> Anxiety</label>
+                                <label><input type="checkbox" name="Historico[]" value="Depressão"> Depression</label>
+                                <label><input type="checkbox" name="Historico[]" value="Insônia"> Insomnia</label>
+                                <label><input type="checkbox" name="Historico[]" value="Gestante/tentando"> Pregnant or
+                                    trying to conceive</label>
+                                <label><input type="checkbox" name="Historico[]" value="Amamentando">
+                                    Breastfeeding</label>
+                                <label><input type="checkbox" name="Historico[]" value="Pressão Alta"> High Blood
+                                    Pressure</label>
+                                <label><input type="checkbox" name="Historico[]" value="epilepsia "> History of
+                                    epilepsy</label>
+                                <label><input type="checkbox" name="Historico[]" value="Sensiblidade/alergia"> Skin
+                                    sensitivity/allergy</label>
+                                <label><input type="checkbox" name="Historico[]" value="Uso de medicamentos"> Use of
+                                    continuous medications</label>
+                                <label><input type="checkbox" name="Historico[]" value="Problemas hormonais"> Hormonal
+                                    issues</label>
+                                <label><input type="checkbox" name="Historico[]" value="Problemas circulatórios">
+                                    Circulatory problems</label>
+                                <label><input type="checkbox" name="Historico[]" value="Problemas respiratórios">
+                                    Respiratory problems</label>
+                            </div>
+                            <input type="text" name="Historico_Outros" placeholder="Others..." class="mt-10">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Blend Objective</legend>
+                        <div class="form-group full-width">
+                            <label>What are you looking for at this moment? <br><small>(Select one or more
+                                    options)</small></label>
+
+                            <div class="checkbox-group vertical-stack">
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Ansiedade/Emocional"> Anxiety / emotional</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Sono/Insônia"> Sleep / insomnia</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Dor Física"> Physical pain</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]" value="Pele"> Skin
+                                    (spots, acne, brightening, rejuvenation)</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Relaxamento/Bem-estar"> Relaxation / well-being</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Energia/Foco"> Energy / focus</label>
+                                <label class="checkbox-item"><input type="checkbox" name="Objetivo[]"
+                                        value="Equilíbrio Hormonal"> Hormonal balance (e.g., menopause, PMS, hormonal
+                                    changes)</label>
+                            </div>
+
+                            <input type="text" name="Objetivo_Outros" placeholder="Other..." class="mt-10">
+                        </div>
+                    </fieldset>
+
+                    <div class="form-grid">
+                        <fieldset>
+                            <legend>Aromatic Preferences</legend>
+                            <div class="checkbox-group grid-checkboxes">
+                                <label><input type="checkbox" name="Aromas[]" value="Florais"> Floral</label>
+                                <label><input type="checkbox" name="Aromas[]" value="Cítricos"> Citrus</label>
+                                <label><input type="checkbox" name="Aromas[]" value="Amadeirados"> Woody</label>
+                                <label><input type="checkbox" name="Aromas[]" value="Herbais"> Herbal</label>
+                                <label><input type="checkbox" name="Aromas[]" value="Doces"> Sweet</label>
+                                <label><input type="checkbox" name="Aromas[]" value="Sem preferência"> No
+                                    preference</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <fieldset class="disclaimer-box">
+                        <legend>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                <path d="M12 9v4" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            Responsibility Statement
+                        </legend>
+
+                        <div class="disclaimer-content">
+                            <p>I declare that the information provided is true, complete, and up-to-date. I am aware
+                                that omitting relevant information may impact the safety and effectiveness of the blend
+                                personalization.</p>
+
+                            <h4 class="disclaimer-subtitle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                Disclaimer and Limitation of Liability
+                            </h4>
+                            <p>HAVA blends are artisanal products for cosmetic and aromatic use, developed based on the
+                                information provided by the client. They do not replace medical evaluation, diagnosis,
+                                or treatment. HAVA is not responsible for adverse reactions resulting from:</p>
+                            <ul class="disclaimer-list">
+                                <li>Omission of information;</li>
+                                <li>Improper use of the product;</li>
+                                <li>Failure to perform a prior sensitivity test.</li>
+                            </ul>
+
+                            <h4 class="disclaimer-subtitle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;">
+                                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                                Data Privacy
+                            </h4>
+                            <p>Your data will be used exclusively for personalization, service, and internal records,
+                                being treated with confidentiality and not shared with third parties, in accordance with
+                                applicable data protection principles.</p>
+
+                            <h4 class="disclaimer-subtitle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Deadline and Follow-up
+                            </h4>
+                            <p>Each blend is developed in a personalized way, respecting your moment and your needs. You
+                                will receive your suggestion within 48 business hours. If we identify the need for
+                                additional information, we will contact you before finalizing your recommendation.</p>
+                        </div>
+
+                        <label class="disclaimer-label mt-15">
+                            <input type="checkbox" name="Aceite_Termos" required>
+                            <span>
+                                <strong>Confirmation:</strong> I have read and agree to the terms above.
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <div class="form-submit-wrapper">
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">SEND SENSORY
+                            PROFILE</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <img src="./assets/img/LOGO-HAVA-BLENDS.png" alt="Hava Blends Logo" class="footer-logo">
+            <p>*Topical and aromatic use. Does not replace medical treatments.*</p>
+            <p class="copyright">© 2024 Hava Blends. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
