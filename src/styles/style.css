@@ -932,57 +932,108 @@ input[type="date"],
 
 .mt-10 { margin-top: 10px; }
 
-/* Disclaimer Box (Importante) */
+/* ==========================================================================
+   TERMOS DE RESPONSABILIDADE (DISCLAIMER BOX) - PADRONIZAÇÃO
+   ========================================================================== */
 .disclaimer-box {
     background-color: #FFFBF8;
     border: 1px dashed #C99D4E !important;
-    padding: 25px !important;
-    border-radius: 8px;
+    padding: 35px !important;
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
-.disclaimer-label {
+/* Alinhamento perfeito do título principal (Legend) com o Ícone */
+#form-anamnese .disclaimer-box legend {
+    font-family: 'Playfair Display', 'Crimson Text', serif;
+    font-size: 1.3rem;
+    color: #4a4238;
+    font-weight: 600;
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    cursor: pointer;
+    align-items: center;
+    gap: 8px; /* Espaçamento ideal entre ícone e texto */
+    padding: 0 10px;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
-.disclaimer-label input {
-    margin-top: 4px;
-    accent-color: #C99D4E;
-    width: 24px;
-    height: 24px;
-}
-
-.disclaimer-label span {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #5a5146;
+#form-anamnese .disclaimer-box legend svg {
+    color: #C99D4E;
+    flex-shrink: 0;
 }
 
 .disclaimer-content {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    color: #5E5240;
-    margin-bottom: 15px;
-    text-align: justify;
+    margin-top: 10px;
 }
 
+/* Padronização dos parágrafos de texto */
+.disclaimer-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem; /* Tamanho padrão de leitura de termos técnicos/legais */
+    line-height: 1.7;   /* Respiro vertical para facilitar a leitura */
+    color: #5E5240;
+    margin-bottom: 15px;
+    text-align: justify; /* Alinhamento justificado elegante */
+}
+
+/* Padronização dos subtítulos internos com os ícones */
 .disclaimer-subtitle {
-    margin: 15px 0 5px 0;
-    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Mudado para Montserrat para manter o padrão limpo do formulário */
+    font-size: 0.9rem;
+    font-weight: 600;
     color: #4a4238;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin: 25px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+.disclaimer-subtitle svg {
+    color: #C99D4E;
+    flex-shrink: 0;
+}
+
+/* Padronização da listagem interna (itens) */
 .disclaimer-list {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-left: 20px;
+    list-style-type: disc;
 }
 
 .disclaimer-list li {
-    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    color: #5E5240;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+/* Alinhamento do Checkbox de confirmação final */
+.disclaimer-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    padding-top: 20px;
+    border-top: 1px solid rgba(216, 207, 194, 0.4); /* Linha divisória sutil antes do aceite */
+    margin-top: 25px;
+}
+
+.disclaimer-label input[type="checkbox"] {
+    margin-top: 3px; /* Alinhamento milimétrico com a primeira linha de texto */
+    accent-color: #C99D4E;
+    width: 18px;   /* Tamanho do quadradinho padronizado (não gigante) */
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.disclaimer-label span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4a4238;
 }
 
 .mt-15 {
